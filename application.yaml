@@ -4,6 +4,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+    refresh:
+      enable: false
   instance:
     nonSecurePort: ${server.port}
 server:
@@ -31,3 +33,4 @@ spring:
   cloud:
     bus:
       enabled: true
+      id: ${spring.application.name}:${server.port}:${random.value}
