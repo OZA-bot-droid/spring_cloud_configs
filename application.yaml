@@ -5,7 +5,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
     refresh:
-      enabled: false
+      enable: false
 server:
   port: 0
 spring:
