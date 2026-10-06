@@ -1,5 +1,4 @@
 # 공통 config
-# 3307, admin, port 주의
 eureka:
   client:
     serviceUrl:
@@ -17,14 +16,10 @@ spring:
     port: 6379
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:3306/mydb
     username: root
     password: admin
   jpa:
     database-platform: org.hibernate.dialect.MariaDBDialect
-    generate-ddl: true
-    hibernate:
-      ddl-auto: create
     show_sql: true
   cloud:
     bus:
